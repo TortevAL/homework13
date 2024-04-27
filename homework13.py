@@ -1,8 +1,9 @@
-def test_(a, b=2, c=3.5, txt='Job'):
-    print(a, b, c, txt)
+list_ = [1, 2, 3, 4, 5]
+def test_(*args):
+    print(args)
 
 
-test_(15, 1, 15, 'BMV')
+test_(*list_)
 
 
 def test_(n):

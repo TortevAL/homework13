@@ -5,11 +5,11 @@ def test_(a, b=2, c=3.5, txt='Job'):
 test_(15, 1, 15, 'BMV')
 
 
-def test(txt, n):
-    if n < 0:
-        return 0
+def test_(n):
+    if n <= 1:
+        return 1
     else:
-        return txt, n + (n - 1)
+        return (n * test_(n - 1))
 
 
-print(test('Итог: ', 9))
+print(test_(9))
